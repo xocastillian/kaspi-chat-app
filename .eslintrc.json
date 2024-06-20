@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": [
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:jsx-a11y/recommended",
+		"plugin:import/errors",
+		"plugin:import/warnings"
+	],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"no-unused-vars": "warn",
+		"no-var": "error",
+		"no-console": "warn",
+		"quotes": ["warn", "single"],
+		"eqeqeq": ["error", "always"],
+		"space-before-function-paren": ["error", "never"],
+		"react/jsx-key": "warn",
+		"react/no-array-index-key": "warn"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
 }
